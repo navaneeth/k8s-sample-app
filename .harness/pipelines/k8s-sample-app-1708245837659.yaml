@@ -22,7 +22,9 @@ pipeline:
                   name: echo
                   spec:
                     shell: Sh
-                    command: echo "echo"
+                    command: |-
+                      echo "echo"
+                      export test="from echo"
                     outputVariables:
                       - name: test
                   timeout: ""
