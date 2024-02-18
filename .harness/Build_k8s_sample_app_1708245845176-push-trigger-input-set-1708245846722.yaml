@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_k8s_sample_app_1708245845176-push-trigger-input-set
+  identifier: Build_k8s_sample_app_1708245845176pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ci_test
+  pipeline:
+    identifier: Build_k8s_sample_app_1708245845176
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
