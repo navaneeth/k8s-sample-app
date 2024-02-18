@@ -21,7 +21,10 @@ pipeline:
                   identifier: echo
                   name: echo
                   spec:
-                    command: echo hello world
+                    shell: Sh
+                    command: echo "echo"
+                    outputVariables:
+                      - name: test
                   timeout: ""
                   type: Run
           platform:
@@ -31,4 +34,3 @@ pipeline:
             type: Cloud
             spec: {}
         type: CI
-        delegateSelectors: <+input>
