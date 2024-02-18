@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_k8s_sample_app_1708245845176-pr-trigger-input-set
+  identifier: Build_k8s_sample_app_1708245845176prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ci_test
+  pipeline:
+    identifier: Build_k8s_sample_app_1708245845176
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
