@@ -25,6 +25,8 @@ pipeline:
                     command: echo "echo"
                     outputVariables:
                       - name: test
+                      - name: test1
+                      - name: test2
                   timeout: ""
                   type: Run
           platform:
